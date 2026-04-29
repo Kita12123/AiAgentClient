@@ -3,7 +3,7 @@ AIモデル活用アプリケーション
 
 ## 技術選定
 - Git/GitHub
-- Python
+- Python (uv)
 - Postgres
 - Oracle Cloud
 - Google Gemini API
@@ -18,4 +18,27 @@ flowchart TB
   node_1 --"API連携"--- node_2
   node_4 --"ローカル通信"--- node_2
   node_3 --"HTTP通信"--- node_2
+```
+
+## 開発環境構築
+
+### Pythonセットアップ
+
+１．uvダウンロード
+
+参考 [GitHubリポジトリ](https://github.com/astral-sh/uv)
+
+２．pythonセットアップ
+
+```shell
+# 最新化
+uv self update
+# 同期
+uv sync
+```
+
+## 実行
+
+```shell
+uv run src/main.py
 ```
