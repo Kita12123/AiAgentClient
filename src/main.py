@@ -8,9 +8,10 @@ import services as sp
 # .envファイルを読み込む
 load_dotenv()
 
+ai = sp.get_ai_service()
+
 if (__name__ == "__main__"):
-    ai = sp.get_ai_service()
-    res = ai.reqMsg("Hello!")
+    res = ai.request_message("Hello!")
     print("回答1: " + res)
-    res = ai.reqMsg(f"あなたが言ってることを和訳して")
+    res = ai.request_message(f"あなたが言ってることを和訳して")
     print("回答2: " + res)

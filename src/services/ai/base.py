@@ -8,7 +8,7 @@ from PIL import Image
 class Base(ABC):
 
     @abstractmethod
-    def reqMsg(self, msg: str) -> str:
+    def request_message(self, msg: str) -> str:
         """Request message.
 
         Args:
@@ -20,7 +20,7 @@ class Base(ABC):
         pass
 
     @abstractmethod
-    def reqFile(self, msg: str, file_path: str) -> str:
+    def request_message_and_upload_file(self, msg: str, file_path: str) -> str:
         """Request message and attachment file.
 
         Args:
@@ -33,7 +33,7 @@ class Base(ABC):
         pass
 
     @abstractmethod
-    def reqImg(self, msg: str, img: Image.ImageFile.ImageFile) -> str:
+    def request_message_with_image(self, msg: str, img: Image.Image) -> str:
         """Request message and image.
 
         Args:

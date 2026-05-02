@@ -1,5 +1,18 @@
 # AiAgentClient
+[![Python tests](https://github.com/Kita12123/AiAgentClient/actions/workflows/python-tests.yml/badge.svg)](https://github.com/Kita12123/AiAgentClient/actions/workflows/python-tests.yml)
 AIモデル活用アプリケーション
+
+## CI
+
+このリポジトリは GitHub Actions によるユニットテストを実行します（push / pull_request）。
+
+ワークフロー: .github/workflows/python-tests.yml
+
+ローカルでテストを実行するには:
+
+```shell
+python -m unittest discover -s tests -p "test_*.py" -v
+```
 
 ## 技術選定
 - Git/GitHub
