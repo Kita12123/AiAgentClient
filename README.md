@@ -16,8 +16,8 @@ python -m unittest discover -s tests -p "test_*.py" -v
 
 ## 技術選定
 - Git/GitHub
-- Python (uv)
-- Postgres
+- Python 3.14 (uv)
+- Postgres 17
 - Oracle Cloud
 - Google Gemini API
 
