@@ -15,11 +15,12 @@ python -m unittest discover -s tests -p "test_*.py" -v
 ```
 
 ## 技術選定
-- Git/GitHub
-- Python 3.14 (uv)
-- Postgres 17
-- Oracle Cloud
-- Google Gemini API
+- Source Manager: Git/GitHub
+- Language: Python 3.14 (uv)
+- Package Manager: uv
+- Database: Postgres 17
+- Server: Oracle Cloud
+- AI: Google Gemini API
 
 ## システム関連図
 ```mermaid
